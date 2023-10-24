@@ -23,7 +23,7 @@
 
             <div class="bloco">
                 <h2 class="titulo">Local</h2>
-                <p class="subtitulo">Av. Adloine Asliemos 192 - Cliestle</p>
+                <p class="subtitulo"><address>Av. Adloine Asliemos, 192 - Cliestle</address></p>
             </div>
 
             <div class="bloco">
@@ -36,24 +36,36 @@
         <section class="secao2">
             <article id="article1">
                 <div class="box1">
-                    <h2 class="titulo2">Email</h2>
-                    <p class="subtitulo2">Enter a valid email address</p>
+                    <label class="titulo2" for="email" >Email</label>    
+                    <input class="subtitulo2" type="text" placeholder="Enter a valid email address"
+                    id="email"
+                    name="email"
+                    maxlength="50"
+                    minlength="30"
+                    required>
                 </div>
                 <div class="box1">
-                    <h2 class="titulo2">Name</h2>
-                    <p class="subtitulo2">Enter your name</p>
+                    <label class="titulo2" for="name">Name</label>
+                    <input class="subtitulo2" type="text" placeholder="Enter a valid email address"
+                    id="name"
+                    name="name"
+                    maxlength="80"
+                    required>
                 </div>
             </article>
             <article id="article2">
                     <div class="box2">
-                        <h2 class="titulo2">Address</h2>
-                        <p class="subtitulo2">Enter your address</p>
+                        <label class="titulo2">Address</label><br>
+                        <input class="subtitulo2" type="text" placeholder="Enter your address"
+                        id="address"
+                        name="address"
+                        maxlength="100">
                     </div>
                     <div class="box2">
-                        <h2 class="titulo2">Message</h2>
-                        <p class="subtitulo2">Enter your Message</p>
+                        <label class="titulo2">Message</label><br>
+                        <input class="subtitulo2" type="text" placeholder="Enter your Message">
                     </div>
-            <input type="button" value="Enviar" id="enviar">
+            <button id="enviar" onclick="enviar()">Enviar</button>
             </article>
         </section>
     </main>
