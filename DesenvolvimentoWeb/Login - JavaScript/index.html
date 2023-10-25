@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Login</title>
+    
     <link rel="stylesheet" href="style.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap');
     </style>
-    <link href="scrpt.js" defer>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <main>
@@ -42,30 +43,37 @@
                     name="email"
                     maxlength="50"
                     minlength="30"
-                    required>
+                    >
                 </div>
                 <div class="box1">
                     <label class="titulo2" for="name">Name</label>
-                    <input class="subtitulo2" type="text" placeholder="Enter a valid email address"
+                    <input class="subtitulo2" type="text" placeholder="Enter your name"
                     id="name"
                     name="name"
                     maxlength="80"
-                    required>
+                    >
                 </div>
             </article>
             <article id="article2">
                     <div class="box2">
-                        <label class="titulo2">Address</label><br>
+                        <label class="titulo2" for="address">Address</label><br>
                         <input class="subtitulo2" type="text" placeholder="Enter your address"
                         id="address"
                         name="address"
                         maxlength="100">
                     </div>
                     <div class="box2">
-                        <label class="titulo2">Message</label><br>
-                        <input class="subtitulo2" type="text" placeholder="Enter your Message">
+                        <label class="titulo2" for="message">Message</label><br>
+                        <input class="subtitulo2" type="text" placeholder="Enter your Message"
+                        id="message"
+                        name="message"
+                        maxlength="200">
                     </div>
-            <button id="enviar" onclick="enviar()">Enviar</button>
+                    <button id="enviar" onclick="enviarValor()">Enviar</button>
+                    <script>
+
+                    </script>
+            <!-- <button onclick="enviarValores()"> Enviar</button> -->
             </article>
         </section>
     </main>
