@@ -67,6 +67,7 @@ div.bloco{
     margin-top: 1rem;
     width: 16.4375rem;
     color: white;
+    border: solid 1px rgba(255, 255, 255, 0);
 }
 .box2 .subtitulo2{
     width: 34.1875rem;
