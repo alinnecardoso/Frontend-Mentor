@@ -1,0 +1,17 @@
+@media (max-width: 1440px),(min-width: 500px){
+    main{
+        margin: -10% 30%;
+        padding: 0.5% 2%;
+
+        background-color: #ffffff;
+        width: 40%;
+        height: max-content;
+        fill: var(--Branco, #FFF);
+        filter: drop-shadow(5px 4px 27px rgba(0, 0, 0, 0.19));
+        
+        position: absolute;
+        z-index: 3;
+
+        border-radius: 1rem;
+    }
+}

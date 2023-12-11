@@ -1,15 +1,39 @@
+.font-work-sans-600{
+    color: #000;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.font-work-sans-700{
+    color: #000;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
 @media (max-width: 1440px),(min-width: 500px){
     header{
         border: solid red 3px;
         background-image: url(../assets/images/background-pattern-desktop.svg);
-        background-size: auto;
+        background-size: cover;
         background-attachment: fixed;
         background-repeat: no-repeat;
         height: 320px;
+
+        position: relative;
+        z-index: 1;
     }
     body{
         border: solid red 3px;
         margin: 0px;
         background-color: #F9F0FF;
+
+        position: relative;
+        z-index: 1;
     }
+   
 }
