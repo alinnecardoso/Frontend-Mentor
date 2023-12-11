@@ -1,4 +1,4 @@
-@media (max-width: 1440px),(min-width: 376px){
+@media (max-width: 1440px),(min-width: 500px){
     header{
         border: solid red 3px;
         background-image: url(../assets/images/background-pattern-desktop.svg);
