@@ -1,6 +1,9 @@
-@media (max-width: 1440px){
+@media (min-width: 1440px){
     header{
-        background-image: url(../assets/images/background-pattern-desktop.svg);
+        width: 100%;
+    }
+    img{
+        width: 100%;
     }
     body{
         margin: 0px;

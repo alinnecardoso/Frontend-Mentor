@@ -1,6 +1,10 @@
-@media (max-width: 375px){
+@media (min-width: 375px){
     header{
+        width: 100%;
         background-image: url(../assets/images/background-pattern-mobile.svg);
+    }
+    img{
+        width: 100%;
     }
     body{
         margin: 0px;
