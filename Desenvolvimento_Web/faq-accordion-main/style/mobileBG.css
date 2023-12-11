@@ -1,0 +1,9 @@
+@media (max-width: 375px){
+    header{
+        background-image: url(../assets/images/background-pattern-mobile.svg);
+    }
+    body{
+        margin: 0px;
+        background-color: #F9F0FF;
+    }
+}
