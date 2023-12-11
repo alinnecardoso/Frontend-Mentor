@@ -1,4 +1,9 @@
 @media (max-width: 1440px),(min-width: 500px){
+    #estrela{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
     main{
         display: flex;
         flex-direction: column;
