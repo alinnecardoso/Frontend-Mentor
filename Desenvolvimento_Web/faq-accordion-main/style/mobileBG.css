@@ -1,12 +1,15 @@
-@media (min-width: 375px){
+@media (max-width: 375px){
     header{
+        border: solid red 3px;
         width: 100%;
         background-image: url(../assets/images/background-pattern-mobile.svg);
+        background-repeat: no-repeat;
     }
     img{
         width: 100%;
     }
     body{
+        border: solid red 3px;
         margin: 0px;
         background-color: #F9F0FF;
     }
