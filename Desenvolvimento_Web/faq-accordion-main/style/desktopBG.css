@@ -1,7 +1,9 @@
-header{
-    background-image: url(../assets/images/background-pattern-desktop.svg);
-}
-body{
-    margin: 0px;
-    background-color: #F9F0FF;
+@media (max-width: 1440px){
+    header{
+        background-image: url(../assets/images/background-pattern-desktop.svg);
+    }
+    body{
+        margin: 0px;
+        background-color: #F9F0FF;
+    }
 }
