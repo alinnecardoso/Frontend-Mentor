@@ -1,9 +1,9 @@
-@media (max-width: 1440px),(min-width: 500px){
+@media (max-width: 1440px),(min-width: 800px){
     .accordion {
         background-color: #eeeeee00;
         color: #444;
         cursor: pointer;
-        padding: 18px;
+        padding: 16px;
         width: 100%;
         border: none;
         text-align: left;
@@ -12,7 +12,7 @@
       }
       
       .active, .accordion:hover {
-        background-color: #cccccc48;
+        color: #AD28EB;
         
         
       }
