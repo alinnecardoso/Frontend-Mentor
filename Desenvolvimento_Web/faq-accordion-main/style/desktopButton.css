@@ -1,0 +1,34 @@
+@media (max-width: 1440px),(min-width: 500px){
+    .accordion {
+            cursor: pointer;
+            width: 100%;
+            text-align: left;
+            border: none;
+            outline: none;
+            transition: 0.4s;
+            width: max-content;
+    }
+    .active, .accordion:hover {
+        background-color: #ccc;
+
+    }
+    .accordion:after {
+        content: url(../assets/images/icon-plus.svg); /* Unicode character for "plus" sign (+) */
+
+        color: #777;
+        float: right;
+
+    }
+    
+    .active:after {
+        content: url(../assets/images/icon-minus.svg); /* Unicode character for "minus" sign (-) */
+
+
+    }
+    .panel{
+        background-color: white;
+        display: none;
+        overflow: hidden;
+        width: 26rem;
+    }
+}
