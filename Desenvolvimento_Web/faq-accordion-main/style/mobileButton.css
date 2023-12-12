@@ -1,33 +1,39 @@
 @media (max-width: 375px){
     .accordion {
-            width: 100%;
-            text-align: left;
-            border: none;
-            outline: none;
-            transition: 0.4s;
-            width: max-content;
-    }
-    .active, .accordion:hover {
-        background-color: #ccc;
-
-    }
-    .accordion:after {
-        content: url(../assets/images/icon-plus.svg); /* Unicode character for "plus" sign (+) */
-
-        color: #777;
-        float: right;
-
-    }
-    
-    .active:after {
-        content: url(../assets/images/icon-minus.svg); /* Unicode character for "minus" sign (-) */
-
-
-    }
-    .panel{
-        background-color: white;
+        background-color: #eeeeee00;
+        color: #444;
+        cursor: pointer;
+        padding: 16px;
+        width: 100%;
+        border: none;
+        border-top: solid rgba(194, 194, 194, 0.368) 1px;
+        text-align: left;
+        outline: none;
+        transition: 0.4s;
+      }
+      
+      .active, .accordion:hover {
+        color: #AD28EB;
+        
+        
+      }
+      
+      .panel {
+        padding: 0 18px;
         display: none;
+        background-color: white;
         overflow: hidden;
-        width: 10rem;
-    }
+      }
+      
+      .accordion:after {
+        content: url(../assets/images/icon-plus.svg); 
+        color: #77777700;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+      }
+      
+      .active:after {
+        content: url(../assets/images/icon-minus.svg); 
+      }
 }
