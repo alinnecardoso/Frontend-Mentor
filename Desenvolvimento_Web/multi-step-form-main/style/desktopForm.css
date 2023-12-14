@@ -3,17 +3,16 @@
     display: flex;
     flex-direction: column;
     background-color: transparent;
-    width: 55%;
+    width: 100%;
     height: max-content;
-    border: solid red 1px;
     margin: auto;
-    margin-left: 5%;
-    padding: 1% 20%;
+    margin-left: 25%;
+    padding: 1% 2%;
   }
   
   /* Style the input fields */
   input {
-    padding: 2.5% 0.5%;
+    padding: 2.5% 1.5%;
     width: 100%;
     font-size: 16px;
     font-family: Raleway;

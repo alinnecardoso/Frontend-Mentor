@@ -21,12 +21,32 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin-bottom: 0rem;
 }
 .font-ubunto-700-subtitulo{
     color: #9699AB;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin-bottom: 1rem;
+}
+.font-ubunto-500-escuro{
+    color: #02295A;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+::placeholder{
+    color: #9699AB;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.7rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 1rem;
+
 }
