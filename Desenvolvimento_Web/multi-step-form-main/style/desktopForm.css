@@ -1,8 +1,13 @@
 /* Style the form */
 #regForm {
+    display: flex;
+    flex-direction: column;
     background-color: transparent;
+    width: 55%;
+    height: max-content;
     border: solid red 1px;
     margin: auto;
+    margin-left: 5%;
     padding: 1% 20%;
   }
   

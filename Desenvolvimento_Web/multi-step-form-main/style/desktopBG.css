@@ -4,15 +4,15 @@ body{
 main{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
 
 
     background-color: #FAFBFF;
     margin: auto;
     margin-top: 4%;
-    width: 63%;
-    height: 28.5rem;
+    width: max-content;
+    height: max-content;
     border-radius: 0.375rem;
     box-shadow: 3px 4px 10px 5px rgba(0, 0, 0, 0.17);
     padding: 1%;
