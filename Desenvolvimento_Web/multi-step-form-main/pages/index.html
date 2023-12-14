@@ -37,7 +37,9 @@
 
       <!-- Button TurnOnOff -->
       <link rel="stylesheet" href="../style/desktopTurnOnOff.css">
-      
+
+      <!-- Prev Next Button -->
+      <link rel="stylesheet" href="../style/PrvNextButton.css">
 </head>
 <body>
     <main>
@@ -172,8 +174,8 @@
             <p><input placeholder="Password..." oninput="this.className = ''"></p>
           </div>
           
-          <div style="overflow:auto;">
-            <div style="float:right;">
+          <div style="overflow:auto;" >
+            <div style="float:right;" id="PrvNext">
               <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
               <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
             </div>

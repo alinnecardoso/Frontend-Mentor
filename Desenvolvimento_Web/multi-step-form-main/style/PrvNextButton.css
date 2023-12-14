@@ -1,0 +1,30 @@
+#PrvNext{
+    display: flex;
+}
+#prevBtn{
+    background-color: transparent;
+    border: none;
+    color: #02295A;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+}
+#nextBtn{
+    color:  #FFF;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    width: 7.5rem;
+    height: 2.5rem;
+
+    border-radius: 0.625rem;
+    background: #02295A;
+
+    cursor: pointer;
+}
