@@ -1,0 +1,16 @@
+.font-ubunto-400-claro{
+    color: #D6D9E6;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.font-ubunto-700{
+    color:#FFF;
+    font-family: Ubuntu;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
