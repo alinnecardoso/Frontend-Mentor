@@ -6,6 +6,15 @@
     font-weight: 400;
     line-height: normal;
 }
+.font-ubunto-400-placeholder{
+    color: #9699AB;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.7rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 1rem;
+}
 .font-ubunto-700{
     color:#FFF;
     font-family: 'Ubuntu', sans-serif;
@@ -32,6 +41,14 @@
     line-height: normal;
     margin-bottom: 1rem;
 }
+.font-ubunto-600-escuro{
+    color: #02295A;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
 .font-ubunto-500-escuro{
     color: #02295A;
     font-family: 'Ubuntu', sans-serif;
@@ -48,5 +65,12 @@
     font-weight: 400;
     line-height: normal;
     margin-bottom: 1rem;
-
+}
+.font-ubunto-400-azul-claro{
+    color: #473DFF;
+    font-family: Ubuntu;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }

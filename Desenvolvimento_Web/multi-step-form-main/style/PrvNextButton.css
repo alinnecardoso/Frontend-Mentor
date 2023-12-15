@@ -1,5 +1,12 @@
+#flexButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 #PrvNext{
     display: flex;
+    padding: 2% 0%;
 }
 #prevBtn{
     background-color: transparent;
@@ -20,11 +27,12 @@
     font-weight: 700;
     line-height: normal;
 
-    width: 7.5rem;
-    height: 2.5rem;
+    width: 6.5rem;
+    height: 1.9rem;
 
     border-radius: 0.625rem;
     background: #02295A;
 
     cursor: pointer;
 }
+

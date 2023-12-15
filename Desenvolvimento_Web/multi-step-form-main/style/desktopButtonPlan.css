@@ -1,0 +1,31 @@
+
+/* Estilo para o input */
+input[type="radio"] {
+    display: none;
+}
+
+/* Estilo para o label */
+input[type="radio"] + label {
+    background-color: transparent;
+    width: 8.075rem;
+    height: 10.5625rem;
+    border-radius: 0.5625rem;
+    border: 1px solid #D6D9E6; 
+
+    padding-left: 2%;
+
+    cursor: pointer; /* Muda o cursor para um ponteiro */
+}
+
+/* Estilo para o label quando o input está selecionado */
+input[type="radio"]:checked + label {
+
+    background-color: #D6D9E6; /* Muda a cor de fundo */
+    border: solid black 1px;
+}
+/* Estilo para o label quando o input está selecionado */
+input[type="radio"]:hover + label {
+
+    background-color: #d6d9e66e; /* Muda a cor de fundo */
+    border: solid black 1px;
+}

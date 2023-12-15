@@ -5,11 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Info</title>
 
-    <!-- Script -->
+            <!-- Script -->
+
+    <!-- Next Button -->
     <script src="../script/nextForm.js" defer></script>
 
+    <!-- Button Plan -->
+    <script src="../script/ButtonPlanStep2.js" defer></script>
 
-    <!-- font Family -->
+    <!-- Check Button -->
+    <script src="../script/CheckStep3.js" defer></script>
+
+
+            <!-- font Family -->
 
     <!-- Ubunto 400 -->
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
@@ -18,7 +26,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
 
 
-    <!-- Style -->
+              <!-- Style -->
 
     <!-- Font -->
     <link rel="stylesheet" href="../style/desktopFont.css">
@@ -40,6 +48,16 @@
 
       <!-- Prev Next Button -->
       <link rel="stylesheet" href="../style/PrvNextButton.css">
+
+      <!-- Button Plan -->
+      <link rel="stylesheet" href="../style/desktopButtonPlan.css">
+
+      <!-- Step 3 -->
+      <link rel="stylesheet" href="../style/desktopStep3.css">
+
+      <!-- Check Step 3 -->
+      <script src="../script/CheckStep3.js"></script>
+
 </head>
 <body>
     <main>
@@ -133,40 +151,102 @@
             <h1 class="font-ubunto-700-escuro">Select your plan</h1>
             <h2 class="font-ubunto-700-subtitulo">You have the option of monthly or yearly billing</h2>
 
-            <div id="buttons">
+            <section id="buttons">
               
-                <button class="plan_button">
-                    <img src="../assets/images/icon-arcade.svg" alt="">
-                    <h3>Arcade</h3>
-                    <h4>$9/mo</h4>
-                </button>
-
-                <button class="plan_button">
+              <input type="radio" id="opcao1" name="opcao" value="9" onclick="exibirValorSelecionado()">
+              <label for="opcao1" class="plan_button">
+                  <img src="../assets/images/icon-arcade.svg" alt="">
+                  <h3 class="font-ubunto-600-escuro">Arcade</h3>
+                  <h4 id="button1" class="font-ubunto-400-placeholder">$9/mo</h4>
+              </label>
+              
+              <input type="radio" id="opcao2" name="opcao" value="12" onclick="exibirValorSelecionado()">
+              <label for="opcao2" class="plan_button">
                   <img src="../assets/images/icon-advanced.svg" alt="">
-                  <h3>Advanced</h3>
-                  <h4>$12/mo</h4>
-                </button>
-
-                <button class="plan_button">
-                  <img src="../assets/images/icon-pro.svg" alt="">
-                  <h3>Pro</h3>
-                  <h4>$15/mo</h4>
-              </button>
-
+                  <h3 class="font-ubunto-600-escuro">Advanced</h3>
+                  <h4 id="button2" class="font-ubunto-400-placeholder">$12/mo</h4>
+              </label>
               
+              <input type="radio" id="opcao3" name="opcao" value="15" onclick="exibirValorSelecionado()">
+              <label for="opcao3" class="plan_button">
+                  <img src="../assets/images/icon-pro.svg" alt="">
+                  <h3 class="font-ubunto-600-escuro">Pro</h3>
+                  <h4 id="button3" class="font-ubunto-400-placeholder">$15/mo</h4>
+              </label>
+              
+
+            </section>
+
+            
+
+            <div id="buttonOnOff">
+
+              <label id="monthly" class="font-ubunto-700-subtitulo">Monthly</label>
+
+              <label class="switch">
+                <input id="OnOff" type="checkbox" onclick="mudaClasse(), mudaClasse2()">
+                <span class="slider"></span>
+              </label>
+
+              <label id="yearly" class="font-ubunto-700-subtitulo">Yearly</label>
 
             </div>
-            <label class="switch">
-              <input type="checkbox">
-              <span class="slider"></span>
-            </label>
+
+            
 
           </div>
           
-          <div class="tab">Birthday:
-            <p><input placeholder="dd" oninput="this.className = ''"></p>
-            <p><input placeholder="mm" oninput="this.className = ''"></p>
-            <p><input placeholder="yyyy" oninput="this.className = ''"></p>
+          <!-- Pick Add-Ons -->
+
+          <div class="tab">
+            
+            <h1 class="font-ubunto-700-escuro">Pick add-ons</h1>
+            <h2 class="font-ubunto-700-subtitulo">Add-ons help enhance your gamming experience.</h2>
+
+            
+              <!-- Online Service -->
+              <label class="CheckButton" for="valor1">
+                  <input id="valor1" type="checkbox" name="opcaoStep3" value="1">
+    
+                  <div class="OnlineText">
+                    <h3 class="font-ubunto-500-escuro">online service</h3>
+                    <h4 class="font-ubunto-400-placeholder">Access to multiplayer games</h4>
+                  </div>
+                  
+                  <p id="checkbox1" class="font-ubunto-400-azul-claro">+$1/mo</p>
+
+              </label>
+
+              <!-- Larger storage -->
+              <label class="CheckButton" for="valor2">
+                <input id="valor2" type="checkbox" name="opcaoStep3" value="2">
+  
+                <div class="OnlineText">
+                  <h3 class="font-ubunto-500-escuro">Larger storage</h3>
+                  <h4 class="font-ubunto-400-placeholder">Extra 1TB of cloud save</h4>
+                </div>
+                
+                <p id="checkbox2" class="font-ubunto-400-azul-claro">+$2/mo</p>
+
+            </label>
+
+            <!-- Costumizable Profile -->
+            <label class="CheckButton" for="valor3">
+              <input id="valor3" type="checkbox" name="opcaoStep3" value="2">
+
+              <div class="OnlineText">
+                <h3 class="font-ubunto-500-escuro">Costumizable Profile</h3>
+                <h4 class="font-ubunto-400-placeholder">Costum theme on your profile</h4>
+              </div>
+              
+              <p id="checkbox3" class="font-ubunto-400-azul-claro">+$2/mo</p>
+
+          </label>
+
+          
+          <button type="button" onclick="somaCheck()">teste</button>
+
+            
           </div>
           
           <div class="tab">Login Info:
@@ -174,10 +254,19 @@
             <p><input placeholder="Password..." oninput="this.className = ''"></p>
           </div>
           
-          <div style="overflow:auto;" >
+          <div id="flexButtons" style="overflow:auto;" >
             <div style="float:right;" id="PrvNext">
-              <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-              <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+              <div>
+                <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+              </div>
+            </div>
+
+            <div style="float:right;" id="PrvNext">
+              
+              <div>
+                <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+              </div>
+
             </div>
           </div>
           
