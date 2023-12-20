@@ -1,5 +1,3 @@
-
-
 function isChecked(OnOff) {
     var inputElement = document.getElementById(OnOff);
     if (inputElement && inputElement.type === "checkbox") {
@@ -21,8 +19,8 @@ function somaCheck() {
     var checkbox3 = document.querySelector("#checkbox3");
     
     var soma = 0;
-    var qtdCheck = document.querySelectorAll(".opcaoStep3");
-
+    var qtdCheck = document.querySelectorAll("[name='opcaoStep3]'");
+    alert(qtdCheck.values)
     
     if (isChecked('OnOff') === true) {
 
