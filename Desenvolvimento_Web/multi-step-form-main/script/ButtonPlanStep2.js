@@ -8,6 +8,7 @@ function isChecked(OnOff) {
 }
 
 function mudaClasse() {
+    
     var labelTrue = document.getElementById("yearly");
     var labelNull = document.getElementById("monthly")
 

@@ -1,0 +1,9 @@
+#quadroAzul{
+    width: 25rem;
+    height: max-content;
+    background-color: #F0F6FF;
+}
+.quadroFlex{
+    display: flex;
+    justify-content: space-between;
+}

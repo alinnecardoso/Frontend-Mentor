@@ -60,7 +60,7 @@ function somaCheck() {
         
     }
     
-    alert(soma+ Number(valor));
+    
 }
 
 
